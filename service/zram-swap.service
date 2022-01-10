@@ -1,11 +1,11 @@
 [Unit]
-Description=zram swap service
+Description=Myzram swap service
 Requires=systemd-modules-load.service local-fs.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/sbin/zram-swap.sh init
-ExecStop=/usr/local/sbin/zram-swap.sh end
+ExecStart=/usr/local/sbin/Myzram-swap.sh init
+ExecStop=/usr/local/sbin/Myzram-swap.sh end
 RemainAfterExit=True
 
 [Install]
